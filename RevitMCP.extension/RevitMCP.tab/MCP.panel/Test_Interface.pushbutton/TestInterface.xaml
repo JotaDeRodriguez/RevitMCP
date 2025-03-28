@@ -1,1 +1,84 @@
- 
+<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Revit MCP Test Interface" 
+    Width="800" 
+    Height="600" 
+    WindowStartupLocation="CenterScreen">
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <TextBlock 
+            Grid.Row="0" 
+            Text="Revit MCP Test Interface" 
+            FontSize="18" 
+            FontWeight="Bold" 
+            Margin="0,0,0,10"/>
+        
+        <!-- Conversation Output -->
+        <Border 
+            Grid.Row="1" 
+            BorderBrush="#CCCCCC" 
+            BorderThickness="1" 
+            Margin="0,0,0,10">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBox 
+                    Name="conversation_output" 
+                    IsReadOnly="True"
+                    TextWrapping="Wrap"
+                    AcceptsReturn="True"
+                    VerticalAlignment="Stretch"
+                    Background="#F5F5F5"
+                    Padding="5"/>
+            </ScrollViewer>
+        </Border>
+        
+        <!-- Message Input -->
+        <TextBox 
+            Grid.Row="2" 
+            Name="message_input" 
+            Height="60" 
+            TextWrapping="Wrap" 
+            AcceptsReturn="True" 
+            VerticalAlignment="Stretch" 
+            Margin="0,0,0,10"
+            Padding="5"/>
+        
+        <!-- Send Button -->
+        <Button 
+            Grid.Row="3" 
+            Name="send_button" 
+            Content="Send" 
+            Height="30" 
+            Width="100" 
+            HorizontalAlignment="Right"/>
+        
+        <!-- Example Queries -->
+        <StackPanel 
+            Grid.Row="3" 
+            Orientation="Horizontal" 
+            HorizontalAlignment="Left">
+            <TextBlock 
+                Text="Example queries: " 
+                VerticalAlignment="Center" 
+                Margin="0,0,10,0"/>
+            <ComboBox 
+                Name="example_queries" 
+                Width="300" 
+                Height="30">
+                <ComboBoxItem Content="What walls are in the current model?"/>
+                <ComboBoxItem Content="Show me all rooms on Level 1"/>
+                <ComboBoxItem Content="Create a wall at coordinates (0,0) to (10,0) with height 10 feet"/>
+                <ComboBoxItem Content="List all doors in the model grouped by type"/>
+                <ComboBoxItem Content="What is the fire rating of wall with ID 123456?"/>
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</Window> 

@@ -1,0 +1,13 @@
+{
+    "builtin": "False",
+    "default_enabled": "True",
+    "type": "extension",
+    "rocket_mode_compatible": "True",
+    "name": "RevitMCP",
+    "description": "Model Context Protocol integration for Revit",
+    "author": "Revit MCP Team",
+    "author_url": "",
+    "url": "",
+    "version": "0.1.0",
+    "dependencies": []
+} 

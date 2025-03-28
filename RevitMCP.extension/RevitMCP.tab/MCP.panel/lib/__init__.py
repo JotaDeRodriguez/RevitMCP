@@ -1,1 +1,1 @@
- 
+# MCP connector package for Revit integration 
