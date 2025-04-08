@@ -1,0 +1,7 @@
+{
+  "mcp_port": 9876,
+  "revit_port": 9877,
+  "api_key": "",
+  "model": "claude-3-7-sonnet-latest",
+  "auto_start_server": true
+} 

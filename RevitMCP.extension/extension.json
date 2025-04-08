@@ -4,10 +4,9 @@
     "type": "extension",
     "rocket_mode_compatible": "True",
     "name": "RevitMCP",
-    "description": "Model Context Protocol integration for Revit",
-    "author": "Revit MCP Team",
+    "description": "Model Context Protocol (MCP) integration for Revit",
+    "author": "RevitMCP Team",
     "author_url": "",
     "url": "",
-    "version": "0.1.0",
     "dependencies": []
 } 

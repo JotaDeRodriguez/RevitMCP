@@ -1,4 +1,7 @@
-"""RevitMCP extension for PyRevit"""
+"""
+RevitMCP Extension
+Integrates Model Context Protocol (MCP) with Revit.
+"""
 
-__title__ = "RevitMCP"
-__doc__ = "Model Context Protocol integration for Revit" 
+__title__ = 'RevitMCP'
+__version__ = '0.1.0' 

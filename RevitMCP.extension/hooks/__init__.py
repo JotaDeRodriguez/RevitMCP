@@ -1,0 +1,3 @@
+"""
+RevitMCP extension hooks
+""" 
